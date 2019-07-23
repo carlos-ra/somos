@@ -1,0 +1,422 @@
+/*css para video inicio y contacto*/
+/*inicio valores comunes*/
+
+/* // === Variables ===== */
+
+/* 
+----
+EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
+----
+ */
+
+.glitch .Menu-list-item::before {
+	background: black;
+}
+
+.glitch .Mask {
+	color: black;
+}
+
+.glitch .Menu-list-item:hover .Mask,
+.glitch .Menu-list-item:active .Mask {
+  color: black;
+  
+}
+
+.glitch .Menu-list-item {
+  width: 50vw;
+}
+
+.glitch .Menu-list {
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  align-items: unset;
+  font-size: 12vw;
+}
+
+/* Tamaño letra header con efecto para pagina de metodologia */
+
+.titleMet .Menu-list {
+  font-size: 8vw;
+}
+
+.Menu-list {
+  font-size: 10vw;
+  text-transform: uppercase;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+
+/* // === Menu item ===== */
+.Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+  /* // === Split Line ===== */ }
+  .Menu-list-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: -10%;
+    right: -10%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: -2px;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    z-index: 1; }
+
+/* // === Top/bottom mask ===== */
+.Mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98); }
+  .Mask span {
+    display: block; }
+
+/* // === Bottom mask specific ===== */
+.Mask + .Mask {
+  top: 48.9%;
+  height: 51.1%; }
+  .Mask + .Mask span {
+    transform: translateY(-49%); }
+
+/* // === Where the fun stuff happens ===== */
+.Menu-list-item:hover .Mask,
+.Menu-list-item:active .Mask {
+  color: #FFF;
+  transform: skewX(12deg) translateX(5px); }
+
+.Menu-list-item:hover .Mask + .Mask,
+.Menu-list-item:active .Mask + .Mask {
+  transform: skewX(12deg) translateX(-5px); }
+
+.Menu-list-item:hover::before,
+.Menu-list-item:active::before {
+  transform: scale(1); 
+}
+
+
+
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section {
+  position: relative;
+}
+
+.videohome {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonentrar {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.entrarBtn {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  background-size: cover;
+}
+
+#hideb {
+  opacity:0;
+  transition: opacity 3s;
+}
+
+/*video valores minimos*/
+@media only screen and (max-width:1096px) {
+  .videohome {
+    width: 1096px;
+    height: 617px;
+  }
+}
+
+.header {
+  background-color: #252525;
+  position: relative;
+  height: 440px;
+}
+
+.sectionContacto {
+  position: relative;
+  height: auto;
+}
+
+.enviarBtn {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: black;
+  border: 8px solid transparent;
+}
+
+/*valores comunes*/
+@media only screen and (min-width:768px) {
+  
+  .sectionContacto {
+    position: relative;
+    height: 55vw;
+  }
+
+  .icons {
+    width: 4vw;
+    height: auto;
+  }
+
+  .title {
+    position: relative;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 10vw;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .sectionSubContanco {
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.7vw;
+    top: 50px;
+  }
+
+  .infoContacto {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6vw;
+    top: 10vw;
+    right: 65vw;
+  }
+
+  .iconsCont {
+    position: absolute;
+    left: 35vw;
+    top: 14vw;
+  }
+
+  .iconMarcador, .iconPhone, .iconMail {
+    border-left: 1px solid black;
+    height: 4vw;
+    position: relative;
+    margin-bottom: 3.6vw;
+  }
+
+  .inputCorto {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 12vw;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .inputMedio {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 25.5vw;
+    outline: none;
+    font-size: 20px; 
+  }
+
+  .inputLargo {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 40vw;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .contactoForm {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    left: 45vw;
+    top: 14vw;
+  }
+
+  .redes {
+    position: absolute;
+    left: 90vw;
+    top: 14vw;
+  }
+
+  #name, #email, #telefono, #asunto, #mensaje{
+    position: relative;
+    height: auto;
+    margin-bottom: 3.6vw;
+    margin-right: 2.2vw;
+  }
+
+  #namel {
+    position: relative;
+    margin-right: 23vw;
+  }
+
+  #asuntol, #mensajel, #emaill {
+    position: relative;
+  }
+
+}
+
+/*valores minimos*/
+@media only screen and (max-width:767px) {
+
+  .icons {
+    width: auto;
+    height: 9vw;
+  }
+
+  .title {
+    position: relative;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 10vw;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .sectionSubContanco {
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7vw;
+    margin: 50px;
+  }
+
+  .infoContacto {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5vw;
+    right: 30vw;
+  }
+
+  .iconsCont {
+    position: absolute;
+    left: 70vw;
+    top: 25vw;
+  }
+
+  .iconMarcador, .iconPhone, .iconMail {
+    border-left: 1px solid black;
+    height: 9vw;
+    position: relative;
+    margin-bottom: 7.5vw;
+  }
+
+  .inputCorto {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 25vw;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .inputMedio {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 52.5vw;
+    outline: none;
+    font-size: 20px; 
+  }
+
+  .inputLargo {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 80vw;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .contactoForm {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8vw;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 10vw;
+  }
+
+  #name, #email, #telefono, #asunto, #mensaje{
+    position: relative;
+    height: auto;
+    margin-bottom: 3.6vw;
+    margin-right: 1.7vw;
+  }
+
+  #namel {
+    position: relative;
+    margin-right: 44.5vw;
+  }
+
+  #emaill {
+    position: relative;
+    margin-right: 19.5vw;
+  }
+
+  #asuntol, #mensajel {
+    position: relative;
+  }
+
+  /*iconos horizontal*/
+  #linkedin {
+    position: absolute;
+    top: 142vw;
+    left: 20%;
+  }
+  #facebook {
+    position: absolute;
+    top: 142vw;
+    left: 30%;
+  }
+  #instagram {
+    position: absolute;
+    top: 142vw;
+    left: 40%;
+  }
+  #whatsapp {
+    position: absolute;
+    top: 142vw;
+    right: 40%;
+  }
+  #vimeo {
+    position: absolute;
+    top: 142vw;
+    right: 30%;
+  }
+  #youtube {
+    position: absolute;
+    top: 142vw;
+    right: 20%;
+  }
+}

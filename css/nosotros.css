@@ -1,0 +1,58 @@
+.sectionNosotros {
+  position: relative;
+  height: auto;
+}
+
+  .textouno {
+    position: relative;
+    text-align:center;
+
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    padding-top: 50px;
+  }
+
+  .textodos {
+    position: relative;
+    top: 53%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+
+/*============FOOTER==============*/
+.footer-area-bottom {
+	background: #252525 none repeat scroll 0 0;
+	padding: 20px 0;
+	margin-top: 5px;
+  }
+  
+  .copyright-text a:hover {
+	text-decoration: underline;
+	color: rgb(240, 244, 245);
+  }
+  
+  .copyright-text a {
+	color: #444;
+  }
+  
+  .copyright>p {
+	margin-bottom: 0;
+  color: rgb(255, 251, 251);
+  text-align: center;
+  }
+  
+  .copyright a, .credits a {
+	color: rgb(240, 240, 240);
+  }
+  
+  .credits {
+	padding-top: 5px;
+	text-align: center;
+	color:  rgb(240, 240, 240);
+  }

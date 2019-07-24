@@ -127,7 +127,7 @@
                 if(vars.running) { return false; }
                 clearInterval(timer);
                 timer = '';
-                vars.currentSlide -= 2;
+                vars.currentSlide -= 4;
                 nivoRun(slider, kids, settings, 'prev');
             });
             
@@ -377,7 +377,7 @@
         
             // Run effects
             vars.running = true;
-            var timeBuff = 0,
+            var timeBuff = 3,
                 i = 0,
                 slices = '',
                 firstSlice = '',
@@ -646,11 +646,11 @@
     //Default settings
     $.fn.nivoSlider.defaults = {
         effect: 'random',
-        slices: 15,
+        slices: 10,
         boxCols: 8,
         boxRows: 4,
-        animSpeed: 500,
-        pauseTime: 3000,
+        animSpeed: 100,
+        pauseTime: 10000,
         startSlide: 0,
         directionNav: true,
         controlNav: true,

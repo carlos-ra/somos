@@ -61,9 +61,6 @@ if(winvar=="false"){
 		var lines = document.querySelector('.menu-btn');
 		lines.style.opacity = "0";
 
-		var menuImg = document.querySelector('.menubtnimg');
-		menuImg.style.visibility = "visible";
-
 		var menu = document.querySelector('.menu');
 		menu.classList.add('hidden');
 		console.log(menu);
@@ -91,11 +88,8 @@ if(winvar=="false"){
 
 	function showMenu(){
 
-		var menuImg = document.querySelector('.menubtnimg');
-		menuImg.style.visibility = "hidden";
-
 		var lines = document.querySelector('.menu-btn');
-		lines.style.opacity = "1";
+		lines.style.opacity = "0";
 
 		var menuBlock = document.querySelector('.menu-block');
 		menuBlock.style.bottom = "0px";
@@ -110,17 +104,17 @@ if(winvar=="false"){
 		menutext.style.transition = "1s";
 
 		var menuBg = document.querySelector('.menu__bg');
-		menuBg.style.height = "789px";
+		menuBg.style.height = "100vh";
 		menuBg.style.transition = "2s";
 		menuBg.style.opacity = "1";
 		console.log(menuBg);
 
 		var menuBottonLine = document.querySelector('.menu__bottom-line');
-		menuBottonLine.style.transform = "translateY(789px)";
+		menuBottonLine.style.transform = "translateY(100vh)";
 		console.log(menuBottonLine.style);
 
 		var menuContent = document.querySelector('.menu__content-wrap');
-		menuContent.style.height = "789px";
+		menuContent.style.height = "100vh";
 
 		var vLines = document.querySelector('.lines-menu');
 		vLines.classList.remove('hidden');

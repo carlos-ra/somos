@@ -29,6 +29,8 @@ function submitForm(e){
 	var mensaje = getInputValue('mensaje');
 
 	saveMessage(nombre,telefono,email,asunto,mensaje);
+
+	document.getElementById('contactoEnviado').innerHTML='<h2 class="mensajeContacto"><div class="tMess">Gracias, muy pronto nos pondremos en<br> contacto contigo...<br> estás un paso más cerca de tu experiencia.</div></h2>';
 }
 
 //Funcion para obtener los valores del form

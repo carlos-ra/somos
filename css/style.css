@@ -214,17 +214,13 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     right: 65vw;
   }
 
-  .iconsCont {
-    position: absolute;
-    left: 35vw;
-    top: 14vw;
-  }
-
   .iconMarcador, .iconPhone, .iconMail {
     border-left: 1px solid black;
     height: 4vw;
     position: relative;
     margin-bottom: 3.6vw;
+    float: right;
+    margin-left: 1vw;
   }
 
   .inputCorto {
@@ -260,6 +256,22 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     font-size: 1.3vw;
     left: 45vw;
     top: 14vw;
+  }
+
+  .mensajeContacto {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    left: 45vw;
+    top: 12vw;    
+  }
+
+  .tMess {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;    
   }
 
   .redes {
@@ -318,17 +330,13 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     right: 30vw;
   }
 
-  .iconsCont {
-    position: absolute;
-    left: 70vw;
-    top: 25vw;
-  }
-
   .iconMarcador, .iconPhone, .iconMail {
     border-left: 1px solid black;
     height: 9vw;
     position: relative;
     margin-bottom: 7.5vw;
+    float: right;
+    margin-left: 1vw;
   }
 
   .inputCorto {
@@ -365,6 +373,24 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     margin-top: 100px;
     margin-bottom: 120px;
     margin-left: 10vw;
+  }
+
+  .mensajeContacto {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8vw;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 10vw;
+    height: 85vh;
+  }
+
+  .tMess {
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
   }
 
   #name, #email, #telefono, #asunto, #mensaje{

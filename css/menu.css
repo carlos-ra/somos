@@ -9834,7 +9834,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     html {
         height: 100%;
         min-height: 0;
-        overflow: hidden
+        overflow: scroll;
     }
     html.loaded .screen-panel.hidden {
         -webkit-transition: none;
@@ -10039,12 +10039,11 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     .inner-section.hidden .animated-columns li .dash {
         opacity: 0 !important
     }
-    .header {
-        position: absolute;
+    .header { 
         left: 0;
         top: 0;
-        height: 100vh;
-        width: 100%
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
     }
     .header .heading-text {
         position: absolute;

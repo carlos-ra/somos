@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="../css/nosotros.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
-    
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="../js/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="../js/firebase-auth.js"></script>
+    <script src="../js/firebase-database.js"></script>
+
   </head>
   <body>
     <!-- MENU DE NAVEGACION DE LA PAGINA -->
     <img src="../media/images/menuIcono.png" class="menubtnimg">
     <div class="fixed-hud menu-block" style="left: 0px; right: 0px; bottom: 0px;">
+      <img src="../media/images/menuIcono.png" class="menubtnimg">
         <div class="menu-btn invertable" data-selector=".menu-btn__line .menu-btn__line__inner" data-prop="background-color" data-original-color="0xFFFFFF" data-inverted-color="0x121212">
             <div class="menu-btn__line" style="transform: scaleX(1);">
                 <div class="menu-btn__line__inner" ></div>
@@ -30,11 +38,11 @@
         </div>
 
         <div class="menu">
-          <div class="menu__bg" style="height: 789px; opacity: 1; left: 0px; right: 0px;">
+          <div class="menu__bg" style="height: 100vh; opacity: 1; left: 0px; right: 0px;">
           </div>
-          <div class="menu__bottom-line" style="transform: translateY(789px);"></div>
-          <div class="menu__content-wrap" style="height: 789px;">
-            <div class="menu__content" style="height: 789px;">
+          <div class="menu__bottom-line" style="transform: translateY(100vh);"></div>
+          <div class="menu__content-wrap" style="height: 100vh;">
+            <div class="menu__content" style="height: 100vh;">
               <div class="glitch">
                   <!-- <h2>MENU</h2> -->
                   <ul class="Menu-list" data-offset="10">
@@ -70,7 +78,7 @@
                           <div class="line"></div>
                           <div class="label">
                               <a href="template-metodologia.html">
-                                  METODOLOGIA
+                                  METODOLOGÍA
                               </a>
                           </div>
                       </div>
@@ -152,38 +160,35 @@
 
         <div class="infoContacto" align="right">
         
-          +57 321-3153-700<br><br><br><br>
-          CLL 144 #49 - 50<br><br><br><br>
-          CONTACTO@SOMOSPRODUCCIONES
+          +57 321-3153-700<div class="iconPhone">
+                            <img src="../media/images/iconos/phone.png" class="icons">
+                          </div><br><br><br><br>
+          CLL 144 # 49 - 50<div class="iconMarcador">
+                            <img src="../media/images/iconos/marcador.png" class="icons">
+                          </div><br><br><br><br>
+          CONTACTO@SOMOSPRODUCCIONES<div class="iconMail">
+                                      <img src="../media/images/iconos/mail.png" class="icons">
+                                    </div>
+
         </div>
+        
+        <div id="contactoEnviado">
+          <form class="contactoForm" id="formularioDeContacto">
+            <p><label for="name" id="namel">Nombre</label> <label for="telefono" id="telefonol">Teléfono</label></p>
+            <p><input id="name" class="inputMedio" type="text"> <input id="telefono" class="inputCorto" type="text"></p>
 
-        <div class="iconsCont">
-          <div class="iconPhone">
-            <img src="../media/images/iconos/phone.png" class="icons">
-          </div>
-          <div class="iconMarcador">
-            <img src="../media/images/iconos/marcador.png" class="icons">
-          </div>
-          <div class="iconMail">
-            <img src="../media/images/iconos/mail.png" class="icons">
-          </div>
+            <p><label for="email" id="emaill">Email</label></p>
+            <input id="email" class="inputLargo" type="text">
+
+            <p><label for="asunto" id="asuntol">Asunto</label></p>
+            <p><input id="asunto" class="inputLargo" type="text"></p>
+
+            <p><label for="mensaje" id="mensajel">Mensaje</label></p>
+            <p><input id="mensaje" class="inputLargo" type="text"></p>
+
+            <button id="botonFormu" class="enviarBtn">Enviar</button>
+          </form>
         </div>
-
-        <form class="contactoForm">
-          <p><label for="name" id="namel">Nombre</label> <label for="telefono" id="telefonol">Telefonó</label></p>
-          <p><input id="name" class="inputMedio" type="text"> <input id="telefono" class="inputCorto" type="text"></p>
-
-          <p><label for="email" id="emaill">Email</label></p>
-          <input id="email" class="inputLargo" type="text">
-
-          <p><label for="asunto" id="asuntol">Asunto</label></p>
-          <p><input id="asunto" class="inputLargo" type="text"></p>
-
-          <p><label for="mensaje" id="mensajel">Mensaje</label></p>
-          <p><input id="mensaje" class="inputLargo" type="text"></p>
-
-          <button class="enviarBtn">Enviar</button>
-        </form>
 
         <div class="redes">
           <a href="#"><img src="../media/images/iconos/linkedin.png" class="icons" id="linkedin"></a><br>
@@ -197,7 +202,7 @@
     </div>
 
     <div class="prev-next-page clearfix">
-      <div class="slide-down" style="left: -30px; right: -30px;">
+      <div class="slide-down">
           <a href="template-nosotros.html">
               <div class="prev-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0px);">
                   <div class="approach-btn roll-hover-btn">
@@ -205,10 +210,10 @@
                   </div>
               </div>
           </a>
-          <a href="template-contacto.html">
+          <a href="template-metodologia.html">
               <div class="next-wrap active" style="transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0px);">
                   <div class="portfolio-btn roll-hover-btn">
-                      <p>Contacto</p>
+                      <p>Metodología</p>
                   </div>
               </div>
           </a>
@@ -236,7 +241,10 @@
         </div>
       </div>
     </footer>
-
+    
+    <script src="../js/contacto.js"></script>
     <script src="../js/main.js"></script>
+    
   </body>
+
 </html>

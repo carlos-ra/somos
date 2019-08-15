@@ -1131,7 +1131,7 @@ a:hover {
     line-height: 1.9;
     letter-spacing: 0.18em;
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
     margin: 25px auto 0
 }
 
@@ -1219,6 +1219,108 @@ a:hover {
     .information__heading__en {
         font-size: 110px
     }
+}
+
+@media only screen and (max-device-width: 767px) {
+    .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 45%;
+        height: 30%;
+        text-decoration: none;
+        color: #fff;
+        background: 50% 50% / cover no-repeat;
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        perspective: 3000px;
+        transform-style: preserve-3d;
+
+        cursor: pointer;
+    }
+
+    .card__heading {
+        font-weight: normal;
+        font-size: 37px;
+        line-height: 1.9;
+        min-height: 3.6em;
+    }
+
+    .card__text {
+        display: none;
+        width: 481px;
+        line-height: 1.9;
+        letter-spacing: 0.18em;
+        font-size: 30px;
+        text-align: justify;
+        margin: 25px auto 0;
+    }
+
+    .card--01 {
+        background-color: #616161;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 2%;
+        left: 3%;
+        z-index: 4;
+        transform: translateZ(-5px);
+    }
+
+    .card--02 {
+        background-color: #424242;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 3%;
+        left: 47.2%;
+        z-index: 3;
+        transform: translateZ(-20px);
+    }
+
+    .card--03 {
+        background-color: #212121;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 29%;
+        left: 5%;
+        z-index: 2;
+        transform: translateZ(-35px);
+    }
+
+    .card--04 {
+        background-color: #616161;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 28%;
+        left: 46%;
+        z-index: 1;
+        transform: translateZ(-45px);
+    }
+
+    .card--05 {
+        
+        background-color: #424242;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 57%;
+        left: 4%;
+        z-index: 2;
+        transform: translateZ(-35px);
+    }
+
+    .card--06 {
+        background-color: #212121;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        top: 55.5%;
+        left: 47%;
+        z-index: 4;
+        transform: translateZ(-5px);
+    }
+
 }
 
 .description-list {

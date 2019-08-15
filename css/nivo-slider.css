@@ -22,10 +22,7 @@
 	left:0%;
 	max-width: none;
 
-	
-	
 }
-
 
 .nivo-main-image {
 	display: block !important;
@@ -118,6 +115,7 @@
 	margin:0;
 	text-align: justify;
 	color:  rgba(5, 5, 5, 0.781);
+	margin-right: 45%
 	
 }
 .nivo-caption a {
@@ -151,4 +149,33 @@
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+@media (max-device-width:767px){
+	#gridSlider {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.nivo-caption h1 {
+		position: static;
+	}
+	.nivo-caption img {
+		position: static;
+		height: auto;
+		justify-self: center;
+	}
+	.nivo-caption h2{
+		position: static;
+	}
+	.nivo-caption p {
+		position: static;
+		margin-left: 6%;
+    	margin-right: 4%;
+	}
+	.nivo-caption {
+		position: static;
+	}
+	.nivoSlider {
+		margin-top: -21%;		
+	}
+
 }

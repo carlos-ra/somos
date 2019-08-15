@@ -9046,7 +9046,7 @@
                 }();
             $("body").on(d, g), f.default.updateStage($(".card-list")), (0, u.default)(), (0, c.default)()
         }), $(document).ajaxSuccess(function(t, e, n) {
-            ga("send", "pageview", n.url)
+            /*ga("send", "pageview", n.url)*/
         })
     }, {
         "./functions/initialize": 7,
@@ -9268,7 +9268,7 @@
             var s = document.getElementById("background"),
                 o = window.innerWidth,
                 c = window.innerHeight;
-            s.width = o, s.height = c;
+            /*s.width = o, s.height = c;*/
             var h = new u.default.Stage(s);
             h.autoClear = !0, u.default.Ticker.setFPS(30), u.default.Ticker.timingMode = u.default.Ticker.RAF_SYNCHED, u.default.Ticker.addEventListener("tick", t);
             var d = function() {
@@ -9493,7 +9493,7 @@
                 }
             }(),
             u = function(t) {
-                var e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                /*var e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 return $.ajax({
                     url: t
                 }).done(function(n) {
@@ -9502,7 +9502,7 @@
                         a = (0, r.getPageIndexFromUrl)(t),
                         u = 0 === e ? 0 : e || (0, r.getPageIndex)();
                     document.title = $(n).filter("title").text(), o(i, s, a, u)
-                })
+                })*/
             };
         n.transition = o, n.request = u
     }, {

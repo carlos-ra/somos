@@ -590,13 +590,19 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     grid-column: 1/2;
     grid-row: 9/10;
     width: 30%;
+    justify-self: end;
+    font-size: 3vw;
+  }
+
+  .aNoMarg {
+    margin: 0;
   }
 
   #linkedin, #facebook, #instagram, #whatsapp, #vimeo, #youtube {
     margin-right: 6vw;
     margin-left: 6vw;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
     height: 10vw;
     width: auto;
   }

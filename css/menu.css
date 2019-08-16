@@ -1,3 +1,16 @@
+/*dev css tet*/
+
+.menu__content-wrap > * {
+    border: 1px solid red;
+}
+
+
+
+/*fin dev css*/
+
+
+
+
 .pop-up_contacts {
     background: none
 }
@@ -9771,7 +9784,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     
     .pages-list .label {
     font-family: 'Michroma', sans-serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: black;
     cursor: pointer;
     pointer-events: visiblePainted;
@@ -9786,8 +9799,14 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
         color: black
     }
 
+    a {
+        margin: 47px;
+    }
+
 	.vertical {
 		left: 50%;
+        top: 62%;
+        height: 321px;
 		-webkit-transform: translate(-142px, -50%);
 		transform: translate(-142px, -50%);
 	}
@@ -9869,18 +9888,40 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     }
     .pages-list {
         width: 100%;
-        left: 20px;
+        left: 36%;
+        top: 61%;
         -webkit-transform: translateY(-45%);
         transform: translateY(-45%)
     }
     .pages-list .inner {
         padding-left: 50px
     }
+
+    .pages-list .label {
+        font-size: 36px;
+    }
+
+    .vertical {
+        top:62%;
+        height: 321px;
+    }
+    .glitch .Menu-list {
+        top:45%;
+    }
+
+    .menubtnimg {
+        width: 12%;
+        z-index: 10;
+    }
+
+    .inner .label a {
+        margin-left: 47px;
+    }
     .pages-list__i {
         padding-left: 10px
     }
     .pages-list__i .line {
-        left: 52px;
+        left: 90px;
         width: 37px;
         -webkit-transform: translateX(-100%) scaleX(0);
         transform: translateX(-100%) scaleX(0);
@@ -9917,7 +9958,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
         padding-right: 20px
     }
     .v-lines {
-        display: none
+        /*display: none*/
     }
     .vintage-logo {
         left: 20px !important;
@@ -11807,7 +11848,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     .fixed .langs,
     .glitch,
     .header .shadows {
-        display: none
+        /*display: none*/
     }
     .beginning .title,
     .our-days .title {
@@ -12814,7 +12855,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
         margin: 0
     }
     .prev-next-page {
-        display: none
+        /*display: none*/
     }
 }
 
@@ -13358,7 +13399,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
         margin: 0
     }
     .prev-next-page {
-        display: none
+        /*display: none*/
     }
 }
 

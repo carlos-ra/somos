@@ -8,6 +8,9 @@
 EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
 ----
  */
+ body {
+  background-color: #070b12;
+ }
 
 .glitch .Menu-list-item::before {
 	background: black;

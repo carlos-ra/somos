@@ -113,6 +113,25 @@
 	color: #fff;
 	text-decoration: none;
   }
+  /*============mediaquery==============*/
+
+
+  @media (max-device-width: 767px) { 
+	.project-menu   {
+		display: grid;
+		grid-template-columns: 1fr 1fr;		
+   }
+   .btn-project-menu {
+	padding-top: 5px;
+   }
+   .project-menu li a {
+	   padding: 10px;
+	   width: -webkit-fill-available;
+   }
+
+}
+
+
   
   .single-awesome-portfolio {
 	float: left;

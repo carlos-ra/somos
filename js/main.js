@@ -1,6 +1,15 @@
 const menuButtons = document.querySelectorAll('.invertable');
+console.log("hice click");
 
 menuButtons.forEach(item => {
+
+	item.addEventListener('click', toogleMenu);
+});
+
+const imagesMenu = document.querySelectorAll('.menubtnimg');
+
+imagesMenu.forEach(item => {
+	console.log(item);
 	item.addEventListener('click', toogleMenu);
 });
 
@@ -44,6 +53,7 @@ if(winvar=="false"){
 	}
 
 	function toogleMenu(e){
+		/*console.log(e);*/
 		var menu = document.querySelector('.menu');
 		if(menu.classList.contains('hidden')){
 			showMenu();
@@ -56,23 +66,20 @@ if(winvar=="false"){
 
 		var menuBlock = document.querySelector('.menu-block');
 		menuBlock.style.bottom = "";
-		console.log(menuBlock);
 
 		var lines = document.querySelector('.menu-btn');
 		lines.style.opacity = "0";
 
 		var menu = document.querySelector('.menu');
-		menu.classList.add('hidden');
-		console.log(menu);
+		menu.classList.add('hidden');		
 
 		var menuBg = document.querySelector('.menu__bg');
 		menuBg.style.height = "0px";
 		menuBg.style.opacity = "0";
-		console.log(menuBg);
 
 		var menuBottonLine = document.querySelector('.menu__bottom-line');
 		menuBottonLine.style.transform = "matrix(0, 0, 0, 1, 0, 56)";
-		console.log(menuBottonLine.style);
+		
 
 		var menuContent = document.querySelector('.menu__content-wrap');
 		menuContent.style.height = "0px";
@@ -93,11 +100,9 @@ if(winvar=="false"){
 
 		var menuBlock = document.querySelector('.menu-block');
 		menuBlock.style.bottom = "0px";
-		console.log(menuBlock);
 
 		var menu = document.querySelector('.menu');
 		menu.classList.remove('hidden');
-		console.log(menu);
 
 		var menutext = document.querySelector('.glitch');
 		menutext.style.opacity = "1";
@@ -106,12 +111,10 @@ if(winvar=="false"){
 		var menuBg = document.querySelector('.menu__bg');
 		menuBg.style.height = "100vh";
 		menuBg.style.transition = "2s";
-		menuBg.style.opacity = "1";
-		console.log(menuBg);
+		menuBg.style.opacity = "1";		
 
 		var menuBottonLine = document.querySelector('.menu__bottom-line');
-		menuBottonLine.style.transform = "translateY(100vh)";
-		console.log(menuBottonLine.style);
+		menuBottonLine.style.transform = "translateY(100vh)";		
 
 		var menuContent = document.querySelector('.menu__content-wrap');
 		menuContent.style.height = "100vh";

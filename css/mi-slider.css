@@ -99,12 +99,11 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: bold;
 	margin: 0 4px;
 	padding: 5px 65px;
 	text-transform: capitalize;
 	transition: all 0.3s ease 0s;
-	/*font-family: Bahnschrift;*/
 	font-family: 'Roboto', sans-serif;
   }
   

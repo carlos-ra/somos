@@ -99,12 +99,12 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: bold;
 	margin: 0 4px;
 	padding: 5px 65px;
 	text-transform: capitalize;
 	transition: all 0.3s ease 0s;
-	font-family: Bahnschrift;
+	font-family: 'Roboto', sans-serif;
   }
   
   .project-menu li a.active, .project-menu li a:hover {
@@ -127,7 +127,16 @@
    .project-menu li a {
 	   padding: 10px;
 	   width: -webkit-fill-available;
+	   font-size: 40px;
    }
+   .nivo-directionNav .nivo-prevNav {
+	left: 0%;
+	height: 70px;
+	width: 71px;}
+	.nivo-directionNav .nivo-nextNav{
+	right: 0%;
+	height: 70px;
+	width: 71px;}
 
 }
 

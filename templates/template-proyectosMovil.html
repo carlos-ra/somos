@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type="text/javascript">
-      var dispositivo = navigator.userAgent.toLowerCase();
-      if (dispositivo.search(/iphone | ipod | ipad | android/) > -1) {
-        document.location = 'https://www.somosproducciones.com.co/templates/template-proyectosMovil.html';
-      }
-    </script>
     <meta charset="utf-8">
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/proyecto.css">
-    <link href="../css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/proyectoMovil.css">
+    <link href="../css/menu.css" rel="stylesheet">    
     
   </head>
   <body>
@@ -155,64 +149,76 @@
       </div>
       <div class="gal">       
         <ul>
-          <li>
+          <li class="img galNormal" id="img1">
             <div class="content">
               
                   <p class="info-project"> <br> Cliente: TOTALMEDIKS<br>
                    LANZAMIENTO COOLIFTING <br>
-                  Servicio: Eventos 
+                  Servicio: Eventos                   
                   <br> <br>                             
                   </p>
+                  <button class="closeImg">X</button>
             </div>
           </li>
-          <li>
+          <li class="img galNormal" id="img2">
             <div class="content">
             
                 <p class="info-project"> <br> Cliente: TOTALMEDIKS<br>
                 LANZAMIENTO COOLIFTING <br>
-                Servicio: Eventos
+                Servicio: Eventos                
                 <br> <br>                
                 </p>
+                <button class="closeImg">X</button>
             </div>
           </li>
-          <li>
+          <li class="img galNormal"  id="img3">
             <div class="content">
               <h2></h2>
                 <p class="info-project"> <br> Cliente: INDURAMA COLOMBIA<br>
                  LANZAMIENTO LIENA QUARZO <br>
-                Servicio: Instalaciones
+                Servicio: Instalaciones                
                 <br> <br>
                 </p>
+                <button class="closeImg">X</button>
             </div>
-          </li>
-          <li>
+          </li>          
+        </ul>
+      </div>
+
+
+      <div class="gal2">       
+        <ul>          
+          <li class="img galNormal" id="img4">
             <div class="content">
         
                 <p class="info-project"> <br>  Cliente: INDURAMA COLOMBIA<br>
                  LANZAMIENTO LIENA QUARZO <br>
-                Servicio: Instalaciones
+                Servicio: Instalaciones                
                 <br> <br>
                 </p>
+                <button class="closeImg">X</button>
             </div>
           </li>
-          <li>
+          <li class="img galNormal" id="img5">
             <div class="content">
              
                 <p class="info-project"> <br>  Cliente: TIGO UNE<br>
                  LANZAMIENTO SIN LÍMITES <br>
-                Servicio: Eventos
+                Servicio: Eventos                
                 <br> <br>
                 </p>
+                <button class="closeImg">X</button>
             </div>
           </li>
-          <li>
+          <li class="img galNormal" id="img6">
             <div class="content">
              
                 <p class="info-project"> <br>  Cliente: TIGO UNE<br>
                  LANZAMIENTO SIN LÍMITES <br>
-                Servicio: Eventos
+                Servicio: Eventos                
                 <br> <br>
                 </p>
+                <button class="closeImg">X</button>
             </div>
           </li>
         </ul>
@@ -263,5 +269,7 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/proyectosMovil.js"></script>
   </body>
 </html>

@@ -4,7 +4,11 @@ body
   font-family: Bahnschrift;
 }
 
-.gal{
+.active {
+  width: 99%;
+}
+
+.gal,.gal2{
   padding: 5%;
   z-index: 6;
 }
@@ -30,10 +34,13 @@ body
 
   padding-left: 10%;
   margin-top: 5px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 8fr 2fr;
 }
 
 
-.gal ul
+.gal ul,.gal2 ul
 {
   
   position: relative;
@@ -44,15 +51,12 @@ body
   
 }
 
-.gal ul li
-{
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+.gal ul li,.gal2 ul li
+{     
   transition: filter 0.4s;
   -webkit-transition: -webkit-filter 1s;
   list-style: none;
-  position: relative;
-  width: 16.6%;
+  position: relative;  
   height: 100%;
   border-right: 1px solid#000;
   float: left;
@@ -62,9 +66,11 @@ body
   overflow: hidden;
   
 }
+
 .info-project {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px
+	font-size: 35px;
+  grid-column: 1/2;
 }
 .gal ul li:nth-child(1)
 {
@@ -88,56 +94,44 @@ body
   background-position: center center;
 }
 
-.gal ul li:nth-child(4)
-{
-  background: url(../media/imgproyectos/INDURAMA/INDURAMA53-2.jpg);
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-}
-
-.gal ul li:nth-child(5)
-{
-  background: url(../media/imgproyectos/TIGO-UNE/TigoUne-006-2.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.gal ul li:nth-child(6)
-{
-  background: url(../media/imgproyectos/TIGO-UNE/TigoUne-034.jpg);
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-}
-
-.gal ul:hover li 
+.galNo 
 {
 
-  width: 8%;
+  width: 0%;
 }
 
-.gal ul li:hover
+.galNormal {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  width: 33%;
+}
+
+.galOn
 {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
-  width: 60%;
+  width: 99%;
 }
 
 
-.gal ul li .content
-{
+.gal ul li .content, .gal2 ul li .content
+{  
   position: absolute;
-  bottom: -90%;
+  
   left: 0;
   width: 100%;
   background: rgba(0,0,0,.8);
   box-sizing: border-box;
   color: #fff;
+  
+}
+
+.galNormal .content {
+  bottom: -90%;
   opacity: 0;
 }
 
-.gal ul li:hover .content
+.galOn .content
 {
   text-align: left;
   bottom: 0%;
@@ -146,6 +140,51 @@ body
   opacity: 1;
   
 }
+
+
+
+
+
+.gal2 ul li:nth-child(1)
+{
+  background: url(../media/imgproyectos/INDURAMA/INDURAMA53-2.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+.gal2 ul li:nth-child(2)
+{
+  background: url(../media/imgproyectos/TIGO-UNE/TigoUne-006-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.gal2 ul li:nth-child(3)
+{
+  background: url(../media/imgproyectos/TIGO-UNE/TigoUne-034.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+
+
+
+
+.closeImg {
+  color: white;
+  background-color: black;
+  grid-column: 2/-1;
+  height: 60%;
+  width: 50%;
+  align-self: center;
+  justify-self: end;
+  margin-right: 20px;
+  font-size: 40px;
+  border-width: 5px;
+
+  }
 
 
 /*============FOOTER==============*/

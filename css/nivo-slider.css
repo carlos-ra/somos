@@ -178,8 +178,22 @@
 	.nivo-caption {
 		position: static;
 	}
-	.nivoSlider {
-		margin-top: -21%;		
-	}
+
+	.nivoSlider .nivo-main-image {
+	height: 0px;
+
+    }
+
+	.nivoSlider .imgback {
+	height: 0px;
+
+    }
+
+    .nivo-directionNav a {
+   
+    top: 20%;
+   }
+
+
 
 }

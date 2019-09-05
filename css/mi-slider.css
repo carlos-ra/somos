@@ -140,6 +140,18 @@
 
 }
 
+.copyright>p {
+	margin-bottom: 0;
+	color: rgb(255, 251, 251);
+	text-align: center;
+	font-family: Bahnschrift;
+	font-size: 25Spx;
+	}
+	.credits {
+	  font-size: 12px;
+	}
+
+
 
   
   .single-awesome-portfolio {
@@ -294,5 +306,3 @@
 	text-align: center;
 	color:  rgb(240, 240, 240);
   }
-
-  

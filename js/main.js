@@ -114,7 +114,7 @@ if(winvar=="false"){
 		menuBg.style.opacity = "1";		
 
 		var menuBottonLine = document.querySelector('.menu__bottom-line');
-		menuBottonLine.style.transform = "translateY(100vh)";		
+		menuBottonLine.style.transform = "translateY(100vh)";	
 
 		var menuContent = document.querySelector('.menu__content-wrap');
 		menuContent.style.height = "100vh";
@@ -122,6 +122,7 @@ if(winvar=="false"){
 		var vLines = document.querySelector('.lines-menu');
 		vLines.classList.remove('hidden');
 
-
-
+		var verticalLine = document.querySelector('.vertical');
+		verticalLine.style.transition = "6s";
+		verticalLine.style.opacity = "1";	
 	}

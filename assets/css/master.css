@@ -368,8 +368,8 @@ a:hover {
 
 .wrapper {
     height: 100vh;
-    min-width: 1024px;
-    min-height: 520px;
+    /*min-width: 1024px;
+    min-height: 520px;*/
     position: relative;
     overflow: hidden;
     z-index: 7;

@@ -22,6 +22,7 @@ pre.addEventListener('mouseover',function(e){
 nex.addEventListener('mouseover',function(e){
 	activeNext("next");
 });
+
 var winvar = window.localStorage["menu"];
 console.log(winvar);
 if(winvar=="false"){
@@ -92,6 +93,8 @@ if(winvar=="false"){
 
 		var vLines = document.querySelector('.lines-menu');
 		vLines.classList.add('hidden');
+		var verticalLine = document.querySelector('.vertical');
+		verticalLine.style.opacity = "0";
 
 
 	}
@@ -124,8 +127,9 @@ if(winvar=="false"){
 
 		var vLines = document.querySelector('.lines-menu');
 		vLines.classList.remove('hidden');
-
-		var verticalLine = document.querySelector('.vertical');
-		verticalLine.style.transition = "6s";
-		verticalLine.style.opacity = "1";	
+		setTimeout(function(){
+			var verticalLine = document.querySelector('.vertical');
+			verticalLine.style.opacity = "1";
+		},2000)
+			
 	}

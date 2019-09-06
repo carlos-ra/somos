@@ -19,13 +19,12 @@
 	position:relative;
 	border-left: 1px solid black;
 	margin-left: 90px;
-	left:50%;
+	/*left:50%;
 	top:50%;
-	height: 260px;
-	-webkit-transform: translate(140px, -50%);
-    transform: translate(140px, -50%)
-
-
+	height: 260px;*/
+	/*-webkit-transform: translate(140px, -50%);
+    transform: translate(140px, -50%);*/
+    opacity: 0;
 }
 
 .titleMet {
@@ -44,7 +43,7 @@
       width: 50px;
       height: auto;
       top: 28px;
-      right: 47px;
+      right: 23px;
       z-index: 5;
     }
 }
@@ -9369,7 +9368,7 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
       width: 50px;
       height: auto;
       top: 30px;
-      right: 40px;
+      right: 20px;
       z-index: 5;
     }
 
@@ -9682,8 +9681,8 @@ screen and (min-device-width:1024px) and (max-device-width:1024px) and (min-devi
     }
     .vertical {
 		left: 50%;
-		-webkit-transform: translate(-142px, -50%);
-		transform: translate(-142px, -50%);
+		-webkit-transform: translate(-142px, -50%);*/
+        transform: translate(-142px, -50%);
 	}
     .pre-title {
         padding-left: 100px

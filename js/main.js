@@ -61,7 +61,10 @@ if(winvar=="false"){
 			hideMenu();
 		}
 	}
+      function imgfondo (){
+		  var imagenprincipal = document.querySelector ('.imgprincipal');
 
+	  }
 	function hideMenu(){
 
 		var menuBlock = document.querySelector('.menu-block');

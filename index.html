@@ -14,8 +14,8 @@
     <script type="text/javascript">
       window.localStorage.setItem("menu","true");
     </script>
-    <div class="img">
-      <img class="imgfondo" src="media/images/fondo.png">
+    <div class="img" id="imgp" >
+      <img class="imgfondo" id="imgprincipal" src="media/images/fondo.png">
       <div id="hide" class="buttonentrar">
         <a class="entrarBtn" id="hideb" href="templates/template-nosotros.html">ENTRAR</a>
       </div>
@@ -27,7 +27,13 @@
         }, 3200);
       setTimeout(function(){
         document.getElementById("hideb").style.opacity = "1";
-      }, 5200);
+      }, 4200);  
+      setTimeout(function(){
+        document.getElementById("imgprincipal").style.display = "block";
+      },1000);
+      setTimeout(function(){
+        document.getElementById("imgprincipal").style.opacity = "1";
+      },1900);
     </script>
 
   </body>

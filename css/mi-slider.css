@@ -273,6 +273,10 @@
 	width: 100%;
   }
 
+  .btn-blank-white {
+	  margin-top: 12px;
+  }
+
   /*============BOTONES==============*/
   .footer-area-bottom {
 	background: #252525 none repeat scroll 0 0;

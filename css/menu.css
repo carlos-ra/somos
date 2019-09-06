@@ -19,11 +19,12 @@
 	position:relative;
 	border-left: 1px solid black;
 	margin-left: 90px;
-	/*left:50%;
+    transition: 2s;
+	left:50%;
 	top:50%;
-	height: 260px;*/
-	/*-webkit-transform: translate(140px, -50%);
-    transform: translate(140px, -50%);*/
+	height: 260px;
+	-webkit-transform: translate(140px, -50%);
+    transform: translate(140px, -50%);
     opacity: 0;
 }
 
@@ -44,7 +45,7 @@
       height: auto;
       top: 28px;
       right: 23px;
-      z-index: 5;
+      z-index: 10;
     }
 }
 

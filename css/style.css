@@ -120,6 +120,15 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
   left: 0;
   top: 0;
   background: white;
+  transform: translate3d(0, 0, 0);
+}
+
+.img:hover(n+2) {
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 
@@ -132,22 +141,6 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
   height: 100%;
   background-repeat:no-repeat;  
   animation-name: fondo;
-}
-@-webkit-keyframes fondo {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes fondo {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
 }
 
 

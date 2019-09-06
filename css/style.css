@@ -119,8 +119,7 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
   position: absolute;
   left: 0;
   top: 0;
-  background: white;
-  transform: translate3d(0, 0, 0);
+  background: #000000;
 }
 
 
@@ -129,10 +128,12 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
 }
 
 .imgfondo {
+  display: none;
   width: 100%;
   height: 100%;
   background-repeat:no-repeat;  
-  animation-name: fondo;
+  opacity:0;
+  transition: opacity 1s;
 }
 
 .buttonentrar {
@@ -229,7 +230,7 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     grid-template-rows: 1fr 1fr 1fr;   
     font-family: 'Roboto', sans-serif;
     font-size: 1.6vw;    
-    padding-bottom: 15vw;    
+    padding-bottom: 4vw;    
     padding-left: 5vw;
   }
 
@@ -295,7 +296,6 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
   }
 
   .mensajeContacto {
-    position: absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;      
   }
@@ -698,7 +698,7 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
   }
   .iconPhone {
     border-left: 0px;
-    height: 4vw;    
+    height: 4vw;   
     margin-bottom: 3.6vw;    
     margin-left: 1vw;
   }
@@ -747,18 +747,22 @@ EFECTO SPLIT EN EL TEXTO "MENU" (Dentro del div glitch)
     margin-bottom: 10vw;
     margin-left: 8vw;
   }
+  #contactoEnviado {
+    width: 100%;
+  }
 
   .mensajeContacto {
-    position: absolute;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3vw;      
+    font-size: 1.3vw;  
+    padding-right: 33px;
+    padding-left: 33px    
   }
 
   .tMess {
     position: relative;    
     width: 100%;
     text-align: center;
-    font-size: 2vw;    
+    font-size: 2vh;    
   }
 
   .redes {

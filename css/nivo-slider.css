@@ -177,6 +177,7 @@
 	}
 	.nivo-caption {
 		position: static;
+		margin-top: 20px
 	}
 
 	.nivoSlider .nivo-main-image {

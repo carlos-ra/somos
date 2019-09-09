@@ -119,7 +119,8 @@
   @media (max-device-width: 767px) { 
 	.project-menu   {
 		display: grid;
-		grid-template-columns: 1fr 1fr;		
+		grid-template-columns: 1fr 1fr;	
+		padding-top: 20px;	
    }
    .btn-project-menu {
 	padding-top: 5px;
@@ -128,6 +129,7 @@
 	   padding: 10px;
 	   width: -webkit-fill-available;
 	   font-size: 40px;
+	   margin-top: 15px;
    }
    .nivo-directionNav .nivo-prevNav {
 	left: 0%;

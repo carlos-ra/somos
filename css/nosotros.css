@@ -73,9 +73,17 @@
       color: rgb(255, 251, 251);
       text-align: center;
       font-family: Bahnschrift;
-      font-size: 25px;
+      font-size: 3.5vw;
       }
       .credits {
-        font-size: 12px;
+        font-size: 3.5vw;
+      }
+
+      #copy {
+        font-size: 4vw; 
+      }
+
+      #designed {
+        font-size: 4vw; 
       }
   }

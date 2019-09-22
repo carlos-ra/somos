@@ -113,6 +113,13 @@
 	color: #fff;
 	text-decoration: none;
   }
+  .copyright>p {
+	margin-bottom: 0;
+	color: rgb(255, 251, 251);
+	text-align: center;
+	font-family: Bahnschrift;
+	
+	}
   /*============mediaquery==============*/
 
 
@@ -120,7 +127,8 @@
 	.project-menu   {
 		display: grid;
 		grid-template-columns: 1fr 1fr;	
-		padding-top: 20px;	
+		padding-top: 15px;
+    	padding-bottom: 80px;
    }
    .btn-project-menu {
 	padding-top: 5px;
@@ -140,18 +148,24 @@
 	height: 70px;
 	width: 71px;}
 
-}
-
-.copyright>p {
+	.slider-wrapper {
+		margin-bottom: 80px;
+	}
+	.copyright>p {
 	margin-bottom: 0;
 	color: rgb(255, 251, 251);
 	text-align: center;
 	font-family: Bahnschrift;
-	font-size: 25Spx;
+	font-size: 3.5vw;
 	}
 	.credits {
-	  font-size: 12px;
+	  font-size: 3.5vw;
 	}
+
+}
+
+
+	
 
 
 
@@ -282,7 +296,7 @@
   /*============BOTONES==============*/
   .footer-area-bottom {
 	background: #252525 none repeat scroll 0 0;
-	padding: 20px 0;
+	padding: 40px 0;
 	margin-top: 10px;
   }
   
